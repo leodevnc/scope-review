@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "cases": [
+    {"id": "회의-notes-read", "principal": "meeting-assistant", "tool": "notes.read", "resource": "/notes/team/weekly", "expect": "allow"},
+    {"id": "private-notes-boundary", "principal": "meeting-assistant", "tool": "notes.read", "resource": "/notes/private/budget", "expect": "deny"},
+    {"id": "personal-draft-still-writable", "principal": "meeting-assistant", "tool": "notes.write", "resource": "/drafts/personal", "expect": "allow"},
+    {"id": "unknown-tool", "principal": "meeting-assistant", "tool": "notes.delete", "resource": "/notes/team", "expect": "deny"}
+  ]
+}

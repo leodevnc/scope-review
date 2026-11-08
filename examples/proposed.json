@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "grants": [
+    {"principal": "meeting-assistant", "tool": "notes.read", "resource": "/notes"},
+    {"principal": "meeting-assistant", "tool": "notes.write", "resource": "/drafts/team"}
+  ]
+}
